@@ -8,7 +8,7 @@ This is a sorting visualizer for:
 5. Merge sort
 6. Heap sort.
 
-Deployed at: https://vedgit77.github.io/Sorting-Visualizer/
+Deployed at: [https://vedgit77.github.io/Sorting-Visualizer/](https://vedgit777.github.io/Sorting-Visualizer/)
 
 
 
