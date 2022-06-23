@@ -10,13 +10,17 @@
 
 <body>
 	<div class="header">
+		<div>
 		<h1>Sorting</h1>
+		<h1>Algo</h1>
+		<h1>Visualizer</h1>
+	</div>
 		<div class="vars">
 			<div class="range">
 				<div class="slide"><label for="bars">ِArray Size</label> : <input id="bars" type="range" name="bars"
-						min="1" max="100" value="50" oninput="setup()" onchange="setup()">
+						min="1" max="75" value="75" oninput="setup()" onchange="setup()">
 					<span id="b"> </span></div>
-				<div class="slide"><label for="delay">Speed</label> : <input id="delay" type="range" name="delay"
+				<div class="slide"><label for="delay">Time per operation</label> : <input id="delay" type="range" name="delay"
 						min="0" max="1000" value="25" oninput="setup()" onchange="setup()">
 					<span id="d"></span></div>
 			</div>
@@ -28,16 +32,17 @@
 				<input type="button" onclick="QuickSort()" value="Quick Sort">
 				<input type="button" onclick="HeapSort()" value="Heap Sort"><br><br>
 			</div>
-		
 			<button onclick="reset()">Generate New Array</button>
-
-		</div>
-		<div>
-			<h1 class="complex"></h1>
 		</div>
 	</div>
 	<div id="container">
 	</div>
+
+	<div>
+		<h2 class="comp">Time Complexity</h2>
+	</div>
+	
+	
 	<script src="App/beep.js"></script>
 	<script src="App/script.js"></script>
 </body>
