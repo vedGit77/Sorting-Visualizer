@@ -1,4 +1,4 @@
-a = new AudioContext({latencyHint: 'interactive',sampleRate: 44100,}) // browsers limit the number of concurrent audio contexts, so you better re-use'em
+a = new AudioContext({latencyHint: 'interactive',sampleRate: 54100,}) // browsers limit the number of concurrent audio contexts, so you better re-use'em
 
 function beep(vol, freq, duration) {
     console.log({ vol, freq, duration })
@@ -6,9 +6,9 @@ function beep(vol, freq, duration) {
     u = a.createGain()
     v.connect(u)
     v.frequency.value = freq
-    v.type = "square"
+    v.type = "circle"
     u.connect(a.destination)
-    u.gain.value = vol * 0.0005
+    u.gain.value = vol * 0.0003
     v.start(a.currentTime)
-    v.stop(a.currentTime + duration * 0.001)
+    v.stop(a.currentTime + duration * 0.002)
 }
